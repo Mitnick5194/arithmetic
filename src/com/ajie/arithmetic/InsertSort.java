@@ -21,7 +21,7 @@ public class InsertSort {
 	public static void insertSortAsc(int data[]) {
 		int i, j;
 		for (i = 1; i < data.length; i++) {
-			int temp = data[i];
+			int temp = data[i];//一定要在这里赋值保存 不然后面j移动的时候会把i位置的值替换掉
 			for (j = i - 1; j >= 0; j--) {
 				if (data[j] > temp) {// 每一次的条件成立，都要移动一位
 					data[j + 1] = data[j];
